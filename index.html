@@ -220,7 +220,7 @@
                                 <div class="overlay"></div>
                                 <div class="hero-title-container">
                                     <div class="section-title">
-                                        <h4>Enjoy Our Waterpark & Hydro Spa</h4>
+                                        <h4>Outdoor infused Nature</h4>
                                         <h2>Unwind & Rejuvenate</h2>
                                         <div class="section-separator"><span><i class="fa-thin fa-gem"></i></span></div>
                                         <a href="#sec3" class="stg_link custom-scroll-link">View Amenities</a>
@@ -232,12 +232,12 @@
                         <!-- swiper-slide-->
                         <div class="swiper-slide">
                             <div class="fs-slider-item hidden-content">
-                                <div class="bg" data-bg="images/bg/15.jpg" data-swiper-parallax="40%"></div>
+                                <div class="bg" data-bg="images/bg/3.jpg" data-swiper-parallax="40%"></div>
                                 <div class="overlay"></div>
                                 <div class="hero-title-container">
                                     <div class="section-title">
-                                        <h4>Enjoy Our Waterpark & Hydro Spa</h4>
-                                        <h2>Unwind & Rejuvenate</h2>
+                                        <h4>Elegant open-plan Kitchen</h4>
+                                        <h2>Cooking & Dining</h2>
                                         <div class="section-separator"><span><i class="fa-thin fa-gem"></i></span></div>
                                         <a href="#sec3" class="stg_link custom-scroll-link">View Amenities</a>
                                     </div>
@@ -248,7 +248,7 @@
                         <!-- swiper-slide-->
                         <div class="swiper-slide">
                             <div class="fs-slider-item hidden-content">
-                                <div class="bg" data-bg="images/bg/1.jpg" data-swiper-parallax="40%"></div>
+                                <div class="bg" data-bg="images/bg/9.jpg" data-swiper-parallax="40%"></div>
                                 <div class="overlay"></div>
                                 <div class="hero-title-container">
                                     <div class="section-title">
@@ -264,12 +264,12 @@
                         <!-- swiper-slide-->
                         <div class="swiper-slide">
                             <div class="fs-slider-item hidden-content">
-                                <div class="bg" data-bg="images/bg/15.jpg" data-swiper-parallax="40%"></div>
+                                <div class="bg" data-bg="images/bg/2.jpg" data-swiper-parallax="40%"></div>
                                 <div class="overlay"></div>
                                 <div class="hero-title-container">
                                     <div class="section-title">
-                                        <h4>Enjoy Segway Rides</h4>
-                                        <h2>Unwind & Rejuvenate</h2>
+                                        <h4>Enjoy Scenic Segway Rides</h4>
+                                        <h2>Activities for Family</h2>
                                         <div class="section-separator"><span><i class="fa-thin fa-gem"></i></span></div>
                                         <a href="#sec3" class="stg_link custom-scroll-link">View Amenities</a>
                                     </div>
@@ -1264,47 +1264,10 @@
                         <div class="single-carousle-container2">
                             <div class="single-carousel-wrap2">
                                 <!-- fw-carousel  -->
-                                <div class="single-carousel2   fl-wrap    lightgallery" data-mousecontrol="0">
+                                <div class="single-carousel2 fl-wrap lightgallery" data-mousecontrol="0">
                                     <div class="swiper-container">
-                                        <div class="swiper-wrapper">
-                                            <!-- swiper-slide-->
-                                            <div class="swiper-slide hov_zoom">
-                                                <!-- Optimized Alt Text, src unchanged -->
-                                                <img src="images/room/1.jpg" alt="Luxury Bedroom Suite at 156Euphoria Boutique Villa Mookgopong">
-                                                <a href="images/room/1.jpg" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
-                                            </div>
-                                            <!-- swiper-slide end-->
-                                            <!-- swiper-slide-->
-                                            <div class="swiper-slide  hov_zoom">
-                                                <!-- Optimized Alt Text, src unchanged -->
-                                                <img src="images/room/2.jpg" alt="Spacious Living Area in 156Euphoria Villa Limpopo">
-                                                <a href="images/room/2.jpg" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
-                                            </div>
-                                            <!-- swiper-slide end-->
-                                            <!-- swiper-slide-->
-                                            <div class="swiper-slide  hov_zoom">
-                                                <!-- Optimized Alt Text, src unchanged -->
-                                                <img src="images/room/3.jpg" alt="Gourmet Kitchen Facilities at 156Euphoria Boutique Villa">
-                                                <a href="images/room/3.jpg" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
-                                            </div>
-                                            <!-- swiper-slide end-->
-                                            <!-- swiper-slide-->
-                                            <div class="swiper-slide  hov_zoom">
-                                                <!-- Optimized Alt Text, src unchanged -->
-                                                <img src="images/room/5.jpg" alt="Modern En-suite Bathroom - 156Euphoria Villa">
-                                                <!-- Assuming room/5.jpg is a bathroom based on previous section -->
-                                                <a href="images/room/5.jpg" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
-                                            </div>
-                                            <!-- swiper-slide end-->
-                                            <!-- swiper-slide-->
-                                            <div class="swiper-slide  hov_zoom">
-                                                <!-- Optimized Alt Text, src unchanged -->
-                                                <img src="images/room/4.jpg" alt="Waterpark Area at 156Euphoria Boutique Villa, Euphoria Golf Estate">
-                                                <!-- Assuming room/4.jpg is the pool -->
-                                                <a href="images/room/4.jpg" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
-                                            </div>
-                                            <!-- swiper-slide end-->
-                                            <!-- Add more slides if needed with optimized alt text -->
+                                        <div class="swiper-wrapper" id="room-gallery-container">
+                                            <!-- Dynamic slides will be loaded here by JavaScript -->
                                         </div>
                                     </div>
                                 </div>
@@ -1726,6 +1689,102 @@
     <script src="js/plugins.js"></script>
     <script src="js/scripts.js"></script>
     <script src="js/map.js"></script>
+    <!-- Dynamic Room Gallery Script -->
+    <script>
+        // Use jQuery's ready function for better compatibility with the template's scripts
+        $(document).ready(function() {
+            // Function to dynamically load room gallery images
+            function loadRoomGalleryImages() {
+                const galleryContainer = document.getElementById('room-gallery-container');
+                if (!galleryContainer) {
+                    console.log("Gallery container not found");
+                    return;
+                }
+
+                console.log("Loading room gallery images");
+
+                // This array will be populated with room image filenames from 1.jpg to 25.jpg
+                const roomImages = [];
+
+                // Generate array of image filenames from 1 to 25 (as we renamed them earlier)
+                for (let i = 1; i <= 25; i++) {
+                    roomImages.push(`${i}.jpg`);
+                }
+
+                // Create a slide for each image
+                roomImages.forEach(function(imageName) {
+                    const imagePath = `images/room/${imageName}`;
+
+                    // Generate descriptive alt text based on image number
+                    let altText = `156Euphoria Boutique Villa - Luxury Accommodation`;
+
+                    // Create the HTML for the slide
+                    const slide = document.createElement('div');
+                    slide.className = 'swiper-slide hov_zoom';
+
+                    // Create image element
+                    const img = document.createElement('img');
+                    img.src = imagePath;
+                    img.alt = altText;
+
+                    // Create zoom link
+                    const link = document.createElement('a');
+                    link.href = imagePath;
+                    link.className = 'box-media-zoom popup-image';
+
+                    // Create icon inside link
+                    const icon = document.createElement('i');
+                    icon.className = 'fal fa-search';
+                    link.appendChild(icon);
+
+                    // Append elements to slide
+                    slide.appendChild(img);
+                    slide.appendChild(link);
+
+                    // Append slide to gallery container
+                    galleryContainer.appendChild(slide);
+                });
+
+                console.log("Room gallery slides created");
+
+                // Reinitialize Swiper after adding slides dynamically
+                if (typeof Swiper !== 'undefined') {
+                    console.log("Initializing Swiper gallery");
+
+                    // Destroy existing swiper instance if it exists
+                    if (window.villaGallerySwiper) {
+                        window.villaGallerySwiper.destroy(true, true);
+                    }
+
+                    // Initialize a new swiper instance
+                    window.villaGallerySwiper = new Swiper(".single-carousel2 .swiper-container", {
+                        loop: true,
+                        centeredSlides: false,
+                        freeMode: false,
+                        slidesPerView: 1,
+                        spaceBetween: 10,
+                        grabCursor: true,
+                        mousewheel: false,
+                        parallax: true,
+                        speed: 1400,
+                        navigation: {
+                            nextEl: '.fw-carousel-button-next',
+                            prevEl: '.fw-carousel-button-prev',
+                        },
+                        pagination: {
+                            el: '.ss-slider-pagination',
+                            clickable: true,
+                        }
+                    });
+                } else {
+                    console.log("Swiper is not defined yet");
+                }
+            }
+
+            // Give page scripts time to initialize before loading our gallery
+            setTimeout(loadRoomGalleryImages, 1000);
+        });
+    </script>
 </body>
 
 <!-- Mirrored from euphoria.kwst.net/site/onepage.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Apr 2025 11:48:48 GMT -->
