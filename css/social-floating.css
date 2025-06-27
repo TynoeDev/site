@@ -1,0 +1,88 @@
+/* Floating Social Media Widget Styles */
+
+.floating-social-widget {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+}
+
+.floating-social-widget .ts_title {
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 8px 12px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    display: block;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    float: right;
+    border-radius: 0 4px 4px 0;
+}
+
+.floating-social-widget ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 0 4px 4px 0;
+}
+
+.floating-social-widget ul li {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.floating-social-widget ul li a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.floating-social-widget ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+
+/* Animation for the widget */
+
+.floating-social-widget {
+    transition: all 0.3s ease;
+}
+
+.floating-social-widget:hover {
+    transform: translateY(-50%) translateX(5px);
+}
+
+
+/* Media queries for responsive design */
+
+@media screen and (max-width: 768px) {
+    .floating-social-widget {
+        left: -5px;
+    }
+    .floating-social-widget:hover {
+        transform: translateY(-50%) translateX(0);
+    }
+    .floating-social-widget ul li a {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 14px;
+    }
+    .floating-social-widget .ts_title {
+        font-size: 10px;
+        padding: 6px 8px;
+    }
+}
